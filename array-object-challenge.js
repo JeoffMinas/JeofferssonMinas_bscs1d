@@ -58,3 +58,15 @@ const quiz = [
 */
 
 // Write your answer here
+
+const quiz = [
+];
+
+quiz.forEach(subject => {
+  console.log(`Subject: ${subject.subject}`);
+  subject.quiz.forEach((question, i) => {
+    console.log(`Question ${i + 1}: ${question.question}`);
+    console.log(`Answer: ${question.answer}`);
+    console.log("-----------------------");
+  });
+});
